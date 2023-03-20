@@ -1,0 +1,15 @@
+<!-- This Component will be used as an HTML Element that we can use to display an assignment's data -->
+<div class="assignContainer">
+    <!-- List of Properties inside of an Assignment Component -->
+    <p class="assignID"><strong>ID: </strong>{{assignment.assignmentID}}</p>
+    <p class="assignClass"><strong>Class: </strong>{{assignment.classCategory}}</p>
+    <p class="assignName"><strong>Assignment Name: </strong>{{assignment.name}}</p>
+    <p class="assignDescription"><strong>Description: </strong>{{assignment.description}}</p>
+    <div class="assignDates">
+        <p class="assignCreateDate"><strong>Create Date: </strong>{{assignment.createDate}}</p>
+        <p class="assignDueDate"><strong>Due Date: </strong>{{assignment.dueDate}}</p>
+    </div>
+    <p class="assignComplete"><strong>Is Completed: </strong><input type="checkbox" [checked]="assignment.isComplete"></p>
+    <br>
+    <button class="assignEdit">Edit</button> &nbsp; <button class="assignDelete">Delete</button>
+</div>

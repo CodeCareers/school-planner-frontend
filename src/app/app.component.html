@@ -1,5 +1,18 @@
-<div id="mainContainer">
-    <app-top-bar></app-top-bar>
-    <app-main-content></app-main-content>
+<div id="hostContainer">
+    <!-- The angular material used to create the Top Bar of the Page that holds the tabs -->
+    <mat-toolbar id="topBar" color="accent">
+        <h1>My School Planner</h1>
+
+        <!-- Elements used to route between different pages. Changes the component shown for router-outlet -->
+        <button routerLink="/">Home</button>
+        <button routerLink="/search">Search</button>
+        <button routerLink="/add">Add Assignment</button>
+    </mat-toolbar>
+
+    <!-- The main container part of the page where the data is shown for each tab -->
+    <div id="mainContainer">
+        <!-- The router-outlet lets us choose which component is displayed based on the routing path -->
+        <router-outlet></router-outlet>
+    </div>
 </div>
-<router-outlet></router-outlet>
+

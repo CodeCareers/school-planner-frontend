@@ -1,0 +1,11 @@
+/* CSS for the div container of the Assignment component */
+.assignContainer {
+    border-style: solid;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+/* CSS used to make all p tags remove the extra margin added by default in the container */
+.assignContainer p {
+    margin: 0;
+}

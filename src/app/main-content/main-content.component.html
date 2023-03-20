@@ -1,1 +1,10 @@
-<p>main-content works!</p>
+<!-- This component holds the homepage information -->
+<div id="mainContentContainer">
+    <h1>Current Work Due</h1>
+    
+    <h3>Assignments:</h3>
+    <!-- This div will be used to list out all the assignments from the search above -->
+    <div id="assignment" *ngFor="let assignment of assignments">
+        <app-assignment [assignment]="assignment"></app-assignment>
+    </div>
+</div>

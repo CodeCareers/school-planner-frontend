@@ -1,4 +1,20 @@
+/* This CSS will be used to space out the components we add to the App component */
+#hostContainer {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#topBar {
+    height: 15%;
+    padding: 1%;
+    display: block;
+}
+
+#topBar button {
+    margin-right: 1%;
+}
+
 #mainContainer {
-    height: 100vh;
-    width: 100vw;
+    height: 85%;
 }

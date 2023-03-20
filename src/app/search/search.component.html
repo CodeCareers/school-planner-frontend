@@ -1,0 +1,37 @@
+<!-- This component holds the homepage information -->
+<div id="mainSearchContainer">
+    <!-- This div will be used to hold the elements used for searching Assignments -->
+    <div id="searchContainer">
+        <h1>Search Assignments</h1>
+        <div id="searchCriteria">
+            <!-- This is the drop down bar to let the user select a field to search in -->
+            <span>
+                <label for="searchFieldChoice">Select field to search for: </label>
+                <select id="searchFieldChoice">
+                    <option>ID</option>
+                    <option>Class</option>
+                    <option>Name</option>
+                    <option>Description</option>
+                    <option>Created Date</option>
+                    <option>Due Date</option>
+                    <option>Completion Status</option>
+                </select>
+            </span>
+            
+            <!-- This is the input box where the user can specify the text they are looking for -->
+            <span>
+                <label for="searchText">Enter text to search for: </label>
+                <input type="text" id="searchText" name="user-name">
+            </span>
+
+            <!-- This is the button used to start a search -->
+            <button id="searchButton">Search 🔍︎</button>
+        </div>
+    </div>
+    
+    <h1>Search Results:</h1>
+    <!-- This div will be used to list out all the assignments from the search above -->
+    <div id="assignment" *ngFor="let i of [1, 2, 3]">
+        <app-assignment></app-assignment>
+    </div>
+</div>
